@@ -1,0 +1,48 @@
+<md-card>
+    <md-card-title>
+        <md-card-title-text layout="row" layout-sm="column" layout-xs="column">
+            <span class="md-subhead">{{title}}:&nbsp;&nbsp;</span>
+            <md-autocomplete ng-model="user"
+                                 md-min-length="1"
+                                 md-no-cache="true"                        
+                                 md-selected-item="selectedItem" 
+                                 md-search-text="searchText" 
+                                 md-items="item in querySearch(searchText)"
+                                 md-item-text="item.name" 
+                                 md-selected-item-change="selectedUserChange(item)"
+                                 placeholder="Search for a User"> <!--  style="width:270px;"-->
+                    <span md-highlight-text="searchText">{{item.name}}</span>  
+                    <md-not-found>Not found!.</md-not-found>
+                </md-autocomplete>
+        </md-card-title-text>          
+    </md-card-title>  
+    
+    <md-card-content>    
+	<md-table-container>
+        <table md-table>
+            <thead md-head ng-if="users.length > 0"> <!-- md-on-reorder="logOrder"> -->
+                <tr md-row>                    
+                    <th md-column md-order-by="name"><span>Name</span></th>
+                    <th md-column md-order-by="email"><span>Email</span></th>
+                    <th md-column md-order-by="phone"><span>Phone#</span></th>
+                    <th md-column><span>Actions</span></th>                                   
+                </tr>
+            </thead>
+            <tbody md-body>
+                <tr md-row md-select="user" md-on-select="logItem" md-auto-select="options.autoSelect" 
+                    ng-repeat="user in users">
+                    <td md-cell><md-icon md-font-set="material-icons md-24" style="color:green;font:bold;">room</md-icon>{{user.name}} </td>
+            		<td md-cell>{{user.email}}</td>
+            		<td md-cell>{{user.phone}}</td>
+            		<td md-cell hide-sm>                      
+                       <md-button class="md-icon-button" aria-label="deleteOne" ng-click="removeUser($event, user)">
+                          <md-icon md-font-set="material-icons md-36" style="color:red;font:bold;">delete</md-icon>
+                       </md-button>
+                    </td>
+                 </tr>
+            </tbody>
+        </table>
+    </md-table-container>              
+    </md-card-content>    
+</md-card> 
+<!-- interested users -->

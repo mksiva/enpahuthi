@@ -1,0 +1,61 @@
+<form name="menuForm" validate ng-submit="addOrUpdateMenu()">
+    <div layout-sm="column" ng-cloak>     
+        <h2><span>Menu</span> <span class="title_style">{{menu.title}}</span> </h2>
+        <br/>   
+        <div layout="row" layout-sm="column">     
+            <md-input-container class="md-block">     
+                <input ng-model="menu.title" placeholder="Title" type="text" ng-required="true">
+            </md-input-container>
+            <div flex="5" hide-xs hide-sm>
+                <!-- Spacer //-->
+            </div>
+            <md-input-container class="md-block"> 
+                Settings Menu:                     
+                <md-switch ng-model="menu.forAdmin" aria-label="status switch" ng-true-value="true" 
+                           ng-false-value="false" class="md-primary">
+                    {{menu.forAdmin}}
+                </md-switch>               
+            </md-input-container>
+            <div flex="5" hide-xs hide-sm>
+                <!-- Spacer //-->
+            </div>
+            <md-input-container class="md-block"> 
+                <input ng-model="menu.icon" placeholder="Icon" type="text" ng-required="true">
+            </md-input-container>
+        </div>
+        <div layout="row" layout-sm="column">   
+            <md-input-container class="md-block"> 
+                <input ng-model="menu.link" placeholder="Link" type="text" ng-required="true">
+            </md-input-container>
+            <div flex="5" hide-xs hide-sm>
+                <!-- Spacer //-->
+            </div>
+            <md-input-container class="md-block">
+                <input ng-model="menu.sortorder" type="text" placeholder="Sort Order">
+            </md-input-container>      
+            <div flex="5" hide-xs hide-sm>
+                <!-- Spacer //-->
+            </div>
+            <md-input-container class="md-block">                    
+                <md-switch ng-model="menu.status" aria-label="status switch" ng-true-value="'active'" 
+                           ng-false-value="'inactive'" class="md-primary">
+                    {{menu.status}}
+                </md-switch>               
+            </md-input-container>
+        </div>
+        <div layout="row" layout-sm="column">     
+            <md-input-container class="md-block">  
+                <md-select ng-model="menu.type" placeholder="Other">
+                <md-option ng-value="type" ng-repeat="type in getTypes()">{{type}}</md-option>
+            </md-select>
+            </md-input-container>
+            <div flex="5" hide-xs hide-sm>
+                <!-- Spacer //-->
+            </div>            
+        </div>
+        <md-input-container class="md-block" layout="row">
+            <md-button type="submit" class="md-raised md-primary" ng-disabled="{{viewMode}}">Save</md-button>       
+            <md-button class="md-raised" ng-href="#!menus">Back</md-button>            
+        </md-input-container>      
+    </div>
+</form>

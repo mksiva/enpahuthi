@@ -1,0 +1,42 @@
+
+<form name="signupForm" validate ng-submit="register()">
+	<fieldset>
+		<legend>Registration</legend>
+		<div layout="column" layout-sm="column"
+			layout-align-gt-sm="center center" layout-fill>
+			<span class="md-body-2 errorText" ng-if="errmsg">{{errmsg}}</span>			
+			<div layout="row" layout-sm="column">
+				<md-input-container class="md-block"> <label>User
+					Name</label> <input ng-model="user.userName" type="text"> </md-input-container>
+				<md-input-container> <label>Password</label> <input
+					type="password" ng-model="user.password" required="true"> </md-input-container>
+				<md-input-container> <label>Email</label> <input
+					type="text" ng-model="user.email" required="true"
+					pattern="^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$"
+					title="xxxx@yyyy.com"> </md-input-container>
+			</div>
+
+			<div layout="row" layout-xs="column" layout-sm="column">
+				<md-input-container class="md-block"> <label>Full
+					Name</label> <input ng-model="user.fullName" type="text"> </md-input-container>
+				<md-input-container class="md-block"> <label>Phone</label>
+				<input ng-model="user.phone" type="text"> </md-input-container>
+				<md-input-container class="md-block"> <label>Address
+					Line1</label> <input ng-model="user.addressLine1" type="text"> </md-input-container>
+				<md-input-container class="md-block"> <label>Address
+					Line2</label> <input ng-model="user.addressLine2" type="text"> </md-input-container>
+				<md-input-container class="md-block"> <label>State</label>
+				<input ng-model="user.state" type="text"> </md-input-container>
+				<md-input-container class="md-block"> <label>Country</label>
+				<input ng-model="user.country" type="text"> </md-input-container>
+				<md-input-container class="md-block"> <label>Zip</label>
+				<input ng-model="user.zip" type="text"> </md-input-container>
+			</div>
+			<div class="actions">
+				<label></label>
+				<md-button type="submit" class="md-raised md-warn">Register</md-button>
+			</div>
+		</div>
+	</fieldset>
+</form>
+
