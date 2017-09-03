@@ -1,0 +1,116 @@
+<div layout="row" layout-sm="column" layout-xs="column">   
+  <div flex>
+        <md-card>
+            <md-toolbar class="md-table-toolbar md-warn">
+                <div class="md-toolbar-tools">
+                    <span class="md-title">Grid 1</span>   
+                    <div flex></div>
+                    <md-button ng-href="#!meterreadings" class="md-icon-button" aria-label="More">
+                        <md-icon md-font-set="material-icons md-24">more_vert</md-icon>
+                    </md-button>
+                </div>
+            </md-toolbar>       
+            <md-card-content >            
+                <span class="dashboard-text-purple">
+                    ₹ {{meterreading.dailysales}}
+                </span>
+                 
+            </md-card-content>
+
+            <md-card-actions layout="row" layout-align="end center">
+                <md-button aria-label="icon"></md-button>
+                <md-button aria-label="icon"></md-button>
+                <md-card-icon-actions>                 
+                    <md-button ng-href="#!meterreadings" class="md-icon-button" aria-label="icon">
+                        <md-icon md-font-set="material-icons md-36">forward</md-icon>
+                    </md-button>
+                </md-card-icon-actions>
+            </md-card-actions>
+        </md-card>
+    </div>     
+    <div flex>
+        <md-card>
+            <md-toolbar class="md-table-toolbar md-primary">
+                <div class="md-toolbar-tools">
+                    <span class="md-title">Grid 2</span>   
+                    <div flex></div>
+                    <md-button ng-href="#!meterreadings" class="md-icon-button" aria-label="More">
+                        <md-icon md-font-set="material-icons md-24">more_vert</md-icon>
+                    </md-button>
+                </div>
+            </md-toolbar>       
+            <md-card-content >
+                <span class="dashboard-text-red">
+                    {{meterreading.dailysalesvolume}}
+                </span> Ltrs.
+            </md-card-content>
+
+            <md-card-actions layout="row" layout-align="end center">
+                <md-button aria-label="icon"></md-button>
+                <md-button aria-label="icon"></md-button>
+                <md-card-icon-actions>                 
+                    <md-button ng-href="#!meterreadings" class="md-icon-button" aria-label="icon">
+                        <md-icon md-font-set="material-icons md-36">forward</md-icon>
+                    </md-button>
+                </md-card-icon-actions>
+            </md-card-actions>
+        </md-card>
+    </div>  
+    <div flex>
+        <md-card>
+            <md-toolbar class="md-table-toolbar md-warn">
+                <div class="md-toolbar-tools">
+                    <span class="md-title">Grid 3</span>   
+                    <div flex></div>
+                    <md-button ng-href="#!products" class="md-icon-button" aria-label="More">
+                        <md-icon md-font-set="material-icons md-24">more_vert</md-icon>
+                    </md-button>
+                </div>
+            </md-toolbar>       
+            <md-card-content >
+                <span class="dashboard-text-indigo">
+                   {{productsTotal}}
+                </span>.
+            </md-card-content>
+
+            <md-card-actions layout="row" layout-align="end center">
+                <md-button aria-label="icon"></md-button>
+                <md-button aria-label="icon"></md-button>
+                <md-card-icon-actions>                 
+                    <md-button ng-href="#!products" class="md-icon-button" aria-label="icon">
+                        <md-icon md-font-set="material-icons md-36">forward</md-icon>
+                    </md-button>
+                </md-card-icon-actions>
+            </md-card-actions>
+        </md-card>
+    </div>    
+    <div flex>
+        <md-card>
+            <md-toolbar class="md-table-toolbar md-danger">
+                <div class="md-toolbar-tools">
+                    <span class="md-title">Grid 4</span>   
+                    <div flex></div>
+                    <md-button ng-href="#!producttypes" class="md-icon-button" aria-label="More">
+                        <md-icon md-font-set="material-icons md-24">more_vert</md-icon>
+                    </md-button>
+                </div>
+            </md-toolbar>       
+            <md-card-content >
+                <span class="dashboard-text-green">
+                   {{producttypesTotal}}
+                </span>.
+            </md-card-content>
+
+            <md-card-actions layout="row" layout-align="end center">
+                <md-button aria-label="icon"></md-button>
+                <md-button aria-label="icon"></md-button>
+                <md-card-icon-actions>                 
+                    <md-button ng-href="#!producttypes" class="md-icon-button" aria-label="icon">
+                        <md-icon md-font-set="material-icons md-36">forward</md-icon>
+                    </md-button>
+                </md-card-icon-actions>
+            </md-card-actions>
+        </md-card>
+    </div>    
+    
+</div>

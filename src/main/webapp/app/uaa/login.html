@@ -1,0 +1,20 @@
+<form name="signupForm" validate ng-submit="login()">
+	<fieldset>
+		<legend>Login</legend>
+		<div layout="column" layout-sm="column"
+			layout-align-gt-sm="center center" layout-fill>			
+			<span class="md-body-2 errorText" ng-if="errmsg">{{errmsg}}</span>			
+			<div layout="row" layout-sm="column" layout-xs="column">			
+				<md-input-container> <label>UserName</label> <input
+					type="text" ng-model="user.userName" ng-required="true"> </md-input-container>
+				<md-input-container> <label>Password</label> <input
+					type="password" ng-model="user.password" ng-required="true">
+				</md-input-container>
+			</div>
+			<div class="actions">
+				<label></label>
+				<md-button class="md-raised md-warn" type ="submit">Login</md-button>
+			</div>
+		</div>
+	</fieldset>
+</form>

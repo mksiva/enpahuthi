@@ -1,0 +1,445 @@
+html, body {
+  font-family: 'Trebuchet', sans-serif;
+  font-size:15px;
+  height:100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Toolbar area */
+
+.menu {
+  background-color: transparent;
+  border: none;
+  height: 38px;
+  margin: 16px;
+  width: 36px;
+}
+
+md-toolbar h1 {
+  margin: auto;
+}
+
+/* Sidenav area */
+
+md-list .md-button {
+  color: inherit;
+  font-weight: 500;
+  text-align: left;
+  width: 100%;
+}
+  md-list .md-button.selected {
+    color: #03a9f4;
+  }
+
+  md-sidenav  md-list {
+    padding: 0px 0px 8px 0px;
+  }
+  
+  md-sidenav, 
+md-sidenav.md-locked-open, 
+md-sidenav.md-closed.md-locked-open-add-active {
+    min-width: 0px !important;
+    width: auto !important;
+    max-width: none !important;
+    //min-width: 200px !important;
+    //width: 85vw !important;
+    //max-width: 400px !important;
+}
+
+
+/* Primary content area */
+
+#content {
+  overflow: hidden;
+}
+
+#content  {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 5px;
+}
+
+#content .md-button.contact {
+  background-color: transparent;
+  border: none;
+  width: 48px;
+  height: 48px;
+  margin: 8px auto 16px 0;
+  position: absolute;
+  top: 10px;
+  right: 40px;
+}
+
+#content md-icon.avatar {
+  margin-top: 10px;
+}
+
+#content .md-button.contact > md-icon {
+  fill:black;
+  width:36px;
+  height:36px;
+}
+
+md-button.menuBtn > md-icon {
+  fill:white;
+  width:24px;
+  height:24px;
+}
+
+#content .md-button.contact:active > md-icon {
+  background-color: #dadada;
+  border-radius: 75%;
+  padding:4px;
+  transition: all 100ms ease-out 30ms;
+}
+
+#content img {
+  display: block;
+  height: auto;
+  max-width: 500px;
+}
+
+/* Utils */
+
+.content-wrapper {
+  position: relative;
+}
+
+/* Typography support coming in 0.8.0 */
+
+md-toolbar h1 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+md-bottom-sheet  md-icon {
+  margin-right:20px;
+}
+
+span.name {
+  font-weight: bold;
+  font-size:1.1em;
+  padding-left:5px;
+}
+
+.headerTable {color: dimgrey;font-weight:bold;border-bottom: solid;border-color: darkgray}
+.odd {color: dimgray;border-bottom: solid;border-bottom-width: thin;border-color: gainsboro}
+.even {color: midnightblue;border-bottom: solid;border-bottom-width: thin;border-color: gainsboro}
+
+.autocompletedemoCustomTemplate .autocomplete-custom-template li {
+  border-bottom: 1px solid #ccc;
+  height: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  white-space: normal; }
+.autocompletedemoCustomTemplate .autocomplete-custom-template li:last-child {
+  border-bottom-width: 0; }
+.autocompletedemoCustomTemplate .autocomplete-custom-template .item-title, .autocompletedemoCustomTemplate .autocomplete-custom-template .item-metadata {
+  display: block;
+  line-height: 2; }
+.autocompletedemoCustomTemplate .autocomplete-custom-template .item-title md-icon {
+  height: 18px;
+  width: 18px; }
+
+.enkanakkugrid {
+    -webkit-column-width: 100px; /* Chrome, Safari, Opera */
+    -moz-column-width: 100px; /* Firefox */  
+    column-width: 400px;
+     display: inline;
+ margin: 0 1em;
+ list-style-type: none;
+}
+
+.menuFont{
+    color:#ffffff; 
+}
+
+/* red */
+
+.panel.red {
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+	background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+	background: -o-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+	background: linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+	background-color: #e8414c;
+	
+	border: 1px solid #c8222d;
+}
+.panel.red ul a {
+	background-color: #e8414c;
+	border: 1px solid #c8222d;
+}
+
+.info-box-green span, .info-box-red span, .info-box-sky span {
+  display: inline-block;
+  float: right;
+  position: relative;
+  bottom: 60px;
+  right: 10px;
+  margin: 0;
+  padding: 10px;
+  color: #FFF;
+  font-size: 2em;
+  cursor: pointer;
+  /*  Rotate '+' to 'X' */
+  -webkit-transition: all 600ms ease-in-out; 
+     -moz-transition: all 600ms ease-in-out; 
+       -o-transition: all 600ms ease-in-out; 
+      -ms-transition: all 600ms ease-in-out; 
+          transition: all 600ms ease-in-out;
+}
+
+.info-box-sky > .info-content > span.close-sky {
+  color: #444;
+}
+
+.info-box-green, .info-box-red, .info-box-sky {
+  margin: 50px auto;
+  padding: 0;
+  width: 480px;
+ 	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+.total-box {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  float: none;
+  width: 139px;
+  height: 68px;
+  border: none;
+  font: normal normal bold 20px/3 "Trebuchet MS", Helvetica, sans-serif;
+  color: rgba(242,245,247,1);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: #9b59b6;
+  -webkit-box-shadow: 3px 3px 4px 0 rgba(0,0,0,0.4) ;
+  box-shadow: 3px 3px 4px 0 rgba(0,0,0,0.4) ;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5) ;
+}
+
+.pan {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 13em;
+  height: 174px;
+  margin: auto;
+  padding: auto;
+  border: none;
+  font: normal normal bold 30px/4 Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: rgba(80,66,127,1);
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5) ;
+}
+
+.title_style {
+  font: normal 19px/1 Arial, Helvetica, sans-serif;
+  color: rgba(215, 40, 40, 0.9);
+}
+
+.ledgerHeading{
+  font: normal 27px/1 "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: blueviolet;
+}
+
+.ledgerCredit{
+  font: normal 27px/1 "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #e8414c;
+}
+
+.ledgerDebit{
+  font: normal 27px/1 "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #006a00;
+}
+
+.total-css { 
+  font: normal 27px/1 "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #e8414c; 
+}
+
+.dashboard-text-purple{ 
+  font: normal 76px "Lucida Console", Monaco, monospace;
+  color: #303F9F;
+  text-align: center;
+}
+
+.dashboard-text-red{ 
+  font: normal 76px "Lucida Console", Monaco, monospace;
+  color: #f25e41;
+  text-align: center;
+}
+
+.dashboard-text-green{ 
+  font: normal 76px "Lucida Console", Monaco, monospace;
+  color: #006a00;
+  text-align: center;
+}
+
+.dashboard-text-indigo{ 
+  font: normal 76px "Lucida Console", Monaco, monospace;
+  color: indigo;
+  text-align: center;
+}
+
+.card-footer{
+    border:1px;
+    border-color: gray        
+}
+
+.challan-inv-css {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 96px;
+  height: 22px;
+  border: 1px solid rgba(152,0,0,1);
+  font: normal 16px/1 "Trebuchet MS", Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: rgba(225,90,150,1);
+}
+.challan-inv-head-css {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 96px;
+  height: 22px;
+  border: 1px solid rgba(152,0,0,1);
+  font: normal 16px/1 "Trebuchet MS", Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: #3498db;
+}
+
+.acc-tab-label{
+    background:#444;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: orangered;
+}
+
+.fill-height{
+  display: flex;
+  flex: 1;
+  min-height: 100%;
+}
+
+.fill-height > div{
+  min-height: 100%;
+  display: flex;
+}
+
+md-sidenav {
+  overflow: visible;
+
+}
+.side-menu, .side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+.side-menu .md-button.active {
+  color: deeppink;
+}
+
+.side-menu .menu-toggle-list a.md-button {
+  display: block;
+  padding: 0 16px 0 32px;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  font-weight: 500;
+}
+
+.side-menu .menu-toggle-list .md-button {
+  display: block;
+  padding: 0 16px 0 32px;
+  text-transform: none;
+}
+
+.side-menu > li {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.md-button-toggle .md-toggle-icon.toggled {
+  transform: rotateZ(180deg);
+  -webkit-transform: rotateZ(180deg);
+}
+
+.side-menu .md-button-toggle .md-toggle-icon {
+  background-size: 100% auto;
+  display: inline-block;
+  margin: auto 0 auto auto;
+  width: 15px;
+  color: darkgray;
+  transition: transform .3s ease-in-out;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+}
+
+.menu-toggle-list.ng-hide {
+  max-height: 0;
+}
+
+.side-menu .md-button {
+  border-radius: 0;
+  color: inherit;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 0;  
+  max-height: 40px;
+  overflow: hidden;
+  padding: 0px 16px;
+  text-align: left;
+  text-decoration: none;
+  white-space: normal;
+  width: 100%;
+  text-transform: none;
+}
+
+.menu-toggle-list {
+  background: #fff;
+  max-height: 1300px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: 0.75s cubic-bezier(0.35, 0, 0.25, 1);
+  -webkit-transition-property: max-height;
+  -moz-transition: 0.75s cubic-bezier(0.35, 0, 0.25, 1);
+  -moz-transition-property: max-height;
+  transition: 0.75s cubic-bezier(0.35, 0, 0.25, 1);
+  transition-property: max-height;
+}
+
+.label-th-css { 
+  font: normal 18px/1 "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #343434; 
+}
+
+.label-td-css { 
+  font: normal 18px/1 "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #b94a48; 
+}
+
+.side-menu menu-toggle span{
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.errorText{
+    color:#f57900;
+}
+

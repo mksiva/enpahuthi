@@ -1,0 +1,7 @@
+<md-button
+    ui-sref="{{section.link}}"
+    ng-class="{'active' : isSectionSelected(section)}"
+    ng-click="focusSection()">
+    <md-icon ng-if="section.icon" md-font-set="material-icons md-24">{{section.icon}}</md-icon> &nbsp;         
+    {{section.title}}
+</md-button>
